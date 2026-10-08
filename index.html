@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f4f7fb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .contact-wrapper {
+            width: 100%;
+            max-width: 950px;
+            min-height: 560px;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        /* LEFT SIDE */
+
+        .contact-info {
+            background: linear-gradient(145deg, #111827, #263449);
+            color: white;
+            padding: 55px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .info-content {
+            margin-top: 30px;
+        }
+
+        .info-content h1 {
+            font-size: 42px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .info-content p {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .contact-details {
+            margin-top: 40px;
+        }
+
+        .detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 22px;
+            color: #e2e8f0;
+            font-size: 14px;
+        }
+
+        .icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .copyright {
+            color: #94a3b8;
+            font-size: 12px;
+        }
+
+        /* RIGHT SIDE */
+
+        .form-section {
+            padding: 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-section h2 {
+            font-size: 30px;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .form-section .subtitle {
+            color: #64748b;
+            margin-bottom: 35px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border: 1px solid #dbe2ea;
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 14px 16px;
+            font-size: 14px;
+            color: #1e293b;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus,
+        textarea:focus {
+            background: white;
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            background: #4f46e5;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #4338ca;
+            transform: translateY(-1px);
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                padding: 40px 30px;
+            }
+
+            .info-content h1 {
+                font-size: 34px;
+            }
+
+            .form-section {
+                padding: 35px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-wrapper">
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info">
+
+            <div>
+                <div class="logo">CONTACT</div>
+
+                <div class="info-content">
+
+                    <h1>
+                        Let's talk.
+                    </h1>
+
+                    <p>
+                        Have a question, suggestion, or just want to say hello?
+                        Send us a message and we'll get back to you soon.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="detail">
+                            <div class="icon">✉</div>
+                            <span>contact@example.com</span>
+                        </div>
+
+                        <div class="detail">
+                            <div class="icon">☎</div>
+                            <span>+91 98765 43210</span>
+                        </div>
+
+                        <div class="detail">
+                            <div class="icon">⌖</div>
+                            <span>Goa, India</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 Contact. All rights reserved.
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="form-section">
+
+            <h2>Send us a message</h2>
+
+            <p class="subtitle">
+                Fill in the details below and we'll be in touch.
+            </p>
+
+            <form
+                action="https://herbicide-entree-crystal.ngrok-free.dev/submit.php"
+                method="POST"
+            >
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button type="submit">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
